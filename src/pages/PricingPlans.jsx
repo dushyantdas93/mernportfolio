@@ -28,7 +28,7 @@ const PricingPlans = () => {
   ];
   return (
     <div className=" w-full lg:w-4/6  mx-auto  flex  flex-col lg:px-6 justify-around gap-10 py-6">
-      <h1 className="font-bold text-3xl lg:text-4xl py-2 lg:py-20 px-6 lg:px-0 relative">
+      <h1 className="font-bold text-3xl lg:text-4xl py-2 lg:py-10 px-6 lg:px-0 relative">
         <img src={bg} alt="" className="absolute -left-2  lg:-left-5 " />
         Pricing Plans
       </h1>
@@ -36,7 +36,10 @@ const PricingPlans = () => {
       <div className="w-full  flex flex-wrap gap-4 justify-around">
         {card.map((item, idx) => {
           return (
-            <div key={idx} className="w-80 lg:w-72 rounded-lg border flex flex-col items-center justify-center  relative overflow-hidden text-center p-8 gap-6  ">
+            <div
+              key={idx}
+              className="w-80 lg:w-72 rounded-lg border border-black flex flex-col items-center justify-center  relative overflow-hidden text-center p-8 gap-6  "
+            >
               {/* <div className="bg-red-400  absolute -top-1 rounded-lg left-1 px-3 py-2">
                   <h1>Review </h1>
                 </div> */}
@@ -50,7 +53,7 @@ const PricingPlans = () => {
                 $ <span className="text-3xl font-bold"> {item.rate} </span>month
               </p>
 
-              <button className="bg-red-400 px-4 py-1 rounded-lg font-semibold lg:text-lg lg:px-6 lg:py-1">
+              <button className="bg-red-400 px-4 py-1 rounded-lg font-semibold lg:text-lg lg:px-6 lg:py-1 text-white">
                 Get Started{" "}
               </button>
             </div>

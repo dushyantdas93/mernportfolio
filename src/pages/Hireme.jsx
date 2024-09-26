@@ -11,7 +11,7 @@ import { FaGithub } from "react-icons/fa";
 const Hireme = () => {
   const icons = [FaInstagram, FaGithub, FaMedium, FaLinkedin, FaHashnode];
   return (
-    <div className=" w-full  flex  flex-col justify-center lg:justify-around  items-center    py-10  h-full lg:h-auto bg-white">
+    <div className=" w-full  flex  flex-col justify-center lg:justify-around  items-center    py-10  h-full lg:h-auto bg-gray-200">
       <div className=" w-full lg:w-1/3 flex flex-col items-center pt-16  gap-4 lg:gap-6 ">
         <img src={favicon} alt="" className="size-32 " />
         <h1 className="font-bold text-3xl lg:text-4xl">Animation Bro</h1>
@@ -21,7 +21,7 @@ const Hireme = () => {
             <Icon key={index} className="size-7 lg:size-9" />
           ))}
         </div>
-        <button className="bg-red-400 px-4 py-1 rounded-lg font-semibold lg:text-xl lg:px-6 lg:py-2">
+        <button className="bg-red-400 px-4 py-1 rounded-lg font-semibold lg:text-xl lg:px-6 lg:py-2 text-white">
           Hire me{" "}
         </button>
       </div>

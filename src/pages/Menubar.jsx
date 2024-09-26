@@ -20,13 +20,13 @@ const Menubar = ({ menu, setMenu }) => {
     <div
       className={`${
         menu ? "h-2/5" : "h-0"
-      } w-full border-b lg:h-full lg:w-1/6 bg-black lg:bg-white lg:border-r z-10 overflow-hidden lg:flex flex-col px-6 lg:py-20 gap-2 lg:gap-6 capitalize mt-14 lg:m-0 fixed top-0 `}
+      } w-full border border-r-black lg:h-full lg:w-1/6 bg-black lg:bg-gray-200 lg:border border-black-r z-10 overflow-hidden lg:flex flex-col px-6 lg:py-10 gap-2 lg:gap-6 capitalize mt-14 lg:m-0 fixed top-0 `}
       id="sidebar"
     >
       <div className="hidden lg:block text-black text-4xl font-bold px-10">
         Portfolio
       </div>
-      <div className="lg:flex flex-col p-6 lg:py-20 gap-10 capitalize">
+      <div className="lg:flex flex-col p-6 lg:py-10 gap-10 capitalize">
         {[
           { heading: "Home", section: "home", icon: IoMdHome },
           { heading: "About", section: "about", icon: FaUserGraduate },

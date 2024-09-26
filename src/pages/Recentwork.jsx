@@ -60,7 +60,7 @@ const Recentwork = () => {
 
   return (
     <div className="w-full lg:w-4/6 mx-auto flex flex-col lg:px-6 justify-around gap-10 py-6">
-      <h1 className="font-bold text-3xl lg:text-4xl py-2 lg:py-20 px-6 lg:px-0 relative">
+      <h1 className="font-bold text-3xl lg:text-4xl py-2 lg:py-10 px-6 lg:px-0 relative">
         <img src={bg} alt="" className="absolute -left-2 lg:-left-5 " />
         Recent Works
       </h1>
@@ -103,17 +103,22 @@ const Recentwork = () => {
         {filteredCards.map((item, idx) => (
           <div
             key={idx}
-            className="  rounded-lg border flex flex-col items-center justify-center gap-3 object-container text-center relative hover:bg-transparent"
+            className="  rounded-lg border border-black flex flex-col items-center justify-center gap-3 object-container text-center relative hover:bg-transparent"
           >
-            <img src={item.img} alt={item.heading} className="rounded-t-lg w-72  " />
+            <img
+              src={item.img}
+              alt={item.heading}
+              className="rounded-lg w-72  "
+            />
             <h3 className="font-semibold hidden">{item.heading}</h3>
             <p className="text-gray-600 hidden">{item.para}</p>
-            <span className="text-sm text-gray-500 hidden">{item.category}</span>
+            <span className="text-sm text-gray-500 hidden">
+              {item.category}
+            </span>
           </div>
         ))}
       </div>
-
-      <button className="bg-red-400 px-4 py-1 rounded-lg font-semibold lg:text-xl lg:px-6 lg:py-2 w-32 lg:w-auto">
+      <button className="bg-red-400 px-4 py-1 rounded-lg font-semibold lg:text-xl lg:px-6 lg:py-2 w-32 lg:w-40 mx-auto text-white">
         Learn More
       </button>
     </div>

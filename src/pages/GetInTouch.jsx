@@ -5,7 +5,7 @@ import bg from "/images/dots-bg-light.svg";
 const GetInTouch = () => {
   return (
     <div className=" w-full lg:w-4/6  mx-auto  flex  flex-col lg:px-6 justify-around gap-10 py-6">
-      <h1 className="font-bold text-3xl lg:text-4xl py-2 lg:py-20 px-6 lg:px-0 relative">
+      <h1 className="font-bold text-3xl lg:text-4xl py-2 lg:py-10 px-6 lg:px-0 relative">
         <img src={bg} alt="" className="absolute -left-2  lg:-left-5 " />
         Get In touch
       </h1>
@@ -20,28 +20,28 @@ const GetInTouch = () => {
             <input
               type="text "
               placeholder="enter your name"
-              className="w-full h-10 px-2 text-center rounded-lg border "
+              className="w-full h-10 px-2 text-center rounded-lg border border-black "
             />
             <input
               type="text"
               placeholder="enter your name"
-              className="w-full h-10 px-2 text-center rounded-lg border "
+              className="w-full h-10 px-2 text-center rounded-lg border border-black "
             />
             <input
               type="text"
               placeholder="enter your name"
-              className="w-full h-20 px-2 text-center rounded-lg border "
+              className="w-full h-20 px-2 text-center rounded-lg border border-black "
             />
             <input
               type="text"
               placeholder="enter your name"
-              className="w-full h-40 px-2 text-center rounded-lg border "
+              className="w-full h-40 px-2 text-center rounded-lg border border-black "
             />
             <button
               type="submit"
-              className="bg-red-400 px-4 py-1 rounded-lg font-semibold lg:text-xl lg:px-6 lg:py-2"
+              className="bg-red-400 px-4 py-1 rounded-full font-semibold lg:text-xl lg:px-6 lg:py-2 text-white"
             >
-              Hire me{" "}
+              Send Message{" "}
             </button>
           </form>
         </div>
