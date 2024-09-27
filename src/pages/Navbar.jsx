@@ -4,7 +4,7 @@ import { IoClose } from "react-icons/io5";
 
 const Navbar = ({ menu, setMenu }) => {
   return (
-    <div className="lg:hidden bg-gray-200 w-full flex items-center px-6 text-xl font-bold justify-between border border-black-b py-3 fixed top-0 z-10">
+    <div className="lg:hidden bg-gray-200 w-full flex items-center px-6 text-xl font-bold justify-between border border-gray-300-b py-3 fixed top-0 z-10">
       <h1 className=" text-2xl font-bold">Portfolio</h1>
       {menu ? (
         <IoClose

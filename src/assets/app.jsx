@@ -24,7 +24,7 @@ const App = () => {
         className="h-full w-full  lg:h-full lg:w-5/6 overflow-y-scroll items-center justify-center"
         id="main"
       >
-        {/* <div className="fixed bottom-4 lg:bottom-10 right-4 lg:right-10 rounded-full size-10 lg:size-16 flex items-center justify-center bg-gray-200 border border-black z-10">
+        {/* <div className="fixed bottom-4 lg:bottom-10 right-4 lg:right-10 rounded-lg size-10 lg:size-16 flex items-center justify-center bg-gray-200 border border-gray-300 z-10">
             <a href="">
               <FaArrowUpLong className="h-20 " />
             </a>

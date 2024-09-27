@@ -2,6 +2,7 @@ import React from "react";
 import client5 from "/images/service-2.svg";
 import bg from "/images/dots-bg-light.svg";
 
+
 const Services = () => {
   const card = [
     {
@@ -22,7 +23,7 @@ const Services = () => {
   ];
   return (
     <div className=" w-full lg:w-4/6  mx-auto  flex  flex-col lg:px-6 justify-around gap-10 py-6">
-      <h1 className="font-bold text-3xl lg:text-4xl py-2 lg:py-10 px-6 lg:px-0 relative">
+      <h1 className="font-bold text-gray-600 text-2xl lg:text-4xl py-2 lg:py-10 px-6 lg:px-0 relative">
         <img src={bg} alt="" className="absolute -left-2  lg:-left-5 " />
         Services
       </h1>
@@ -32,7 +33,7 @@ const Services = () => {
           return (
             <div
               key={idx}
-              className="size-80 lg:size-72 rounded-lg border border-black flex flex-col items-center justify-center gap-3 px-3 text-center bg-blue-400 px-6"
+              className="size-80  lg:size-72 rounded-lg border-gray-300 flex flex-col items-center justify-center gap-3 shadow-xl text-center bg-blue-400 px-6 hover:-translate-y-4 hover:scale-105 transform transition-transform duration-300 ease-out"
             >
               <img src={item.img} alt="" />
               <h1 className="font-bold text-lg">{item.heading}</h1>
